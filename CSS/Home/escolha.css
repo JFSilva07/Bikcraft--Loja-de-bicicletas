@@ -3,7 +3,7 @@
   border-radius: 5px;
   object-fit: cover;
 }
-.efeito :hover {
+.escolha-sua a:hover {
   transform: scale(1.02);
   transition: transform 0.5s;
 }
@@ -38,6 +38,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-bottom: 8px;
 }
 .escolha-sua p {
   margin-left: 24px;

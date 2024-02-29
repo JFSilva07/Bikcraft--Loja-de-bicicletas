@@ -8,6 +8,7 @@
 
 footer {
   background-color: var(--c12);
+  padding-bottom: 60px;
 }
 .footer {
   max-width: 1350px;
@@ -20,7 +21,7 @@ footer {
   gap: 60px;
   padding: 60px 0px;
 }
-.footer p,
+.footer 
 h2,
 li,
 a {
@@ -63,6 +64,9 @@ a {
 .informaçoes a {
   padding: 10px 0px;
   color: var(--c5);
+}
+.cor-direitos{
+  color: var(--c10);
 }
 @media (max-width: 900px) {
   .footer {

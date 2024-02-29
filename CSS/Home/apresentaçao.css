@@ -25,10 +25,11 @@
 .container-ap p {
   color: var(--c5);
   font-size: 1.5rem;
-  line-height: 2.25rem;
+  line-height: 1.125;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   margin-bottom: 40px;
+  max-width: 48ch;
 }
 
 #apresentaçao {

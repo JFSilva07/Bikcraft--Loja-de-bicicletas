@@ -102,7 +102,8 @@
   background-color: var(--c12);
   padding: 36px 32px;
   border-radius: 5px;
-  row-gap: 36px;
+
+  gap: 12px;
   margin-left: 8px;
   margin-bottom: 44px;
 }
@@ -112,6 +113,7 @@
 }
 .informacoes-interno p {
   margin: 0px;
+
 }
 
 .ficha-interno {
@@ -187,6 +189,7 @@
 /*SEGUROS INTERNA*/
 
 .secao-seguros-interna {
+  margin-top: 60px;
   background-color: var(--c11);
   box-shadow: inset 0px 120px var(--c0), inset 0px -100px var(--c12);
 }
@@ -281,6 +284,10 @@
   .descricao-interno-p-inicio {
     max-width: 36ch;
     font-size: 20px;
+  }
+  .informacoes-interno{
+    gap: 24px;
+   
   }
   .descricao-interno-001 p {
     font-size: 16px;
