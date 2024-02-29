@@ -1,0 +1,85 @@
+.container-depoimento {
+  max-width: 1450px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.depoimento {
+  background-color: var(--p1);
+}
+.descriçao-depoimento {
+  font: 900 italic 32px/1.125 "Merriweather", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-self: end;
+  margin-bottom: 40px;
+  max-width: 25ch;
+  gap: 0px;
+  margin-left: 40px;
+  position: relative;
+}
+.descriçao-depoimento p {
+  color: var(--p5);
+}
+
+.depoimento-img {
+  max-width: 100%;
+  grid-column: 1;
+  grid-row: 1;
+  margin-bottom: -4px;
+}
+
+#ana-julia {
+  font: 600 24px/1.5 "poppins", sans-serif;
+  color: var(--p4);
+  margin-top: -12px;
+}
+.detalhe-depoimento::after {
+  content: url(/img/parceiros/aspas01.svg);
+  position: absolute;
+  bottom: 60px;
+  right: 10px;
+}
+.detalhe-depoimento::before {
+  content: url(/img/parceiros/aspas02.svg);
+  position: absolute;
+  left: -40px;
+  top: 12px;
+}
+@media (max-width: 900px) {
+  .descriçao-depoimento {
+    font-size: 20px;
+  }
+  .detalhe-depoimento::after {
+    right: -10px;
+    bottom: 40px;
+  }
+  .detalhe-depoimento::before {
+    left: -40px;
+    top: 0px;
+  }
+}
+@media (max-width: 700px) {
+  .container-depoimento {
+    grid-template-columns: 1fr;
+    gap: 0px;
+    max-width: fit-content;
+  }
+  .descriçao-depoimento {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .depoimento-img {
+    display: none;
+  }
+  #ana-julia {
+    padding-top: 10px;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,145 @@
+.h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 4.5rem;
+  margin-bottom: 32px;
+  color: var(--c0);
+  font-family: "poppins", sans-serif;
+}
+
+.img-apresentaçao-01 {
+  max-width: 100%;
+  border-radius: 5px;
+  height: 100%;
+  object-fit: cover;
+}
+.container-img {
+  margin-top: -30px;
+  margin-bottom: -120px;
+}
+.fundo-bg {
+  background: var(--c12);
+
+  padding-top: 30px;
+}
+.container-ap p {
+  color: var(--c5);
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+#apresentaçao {
+  grid-row: 1;
+  align-self: end;
+  padding-left: 15px;
+  padding-bottom: 60px;
+}
+.container-ap {
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.img-apresentaçao-02 {
+  display: none;
+}
+.espaçamento {
+  background: var(--c0);
+  width: 100%;
+  height: 120px;
+}
+@media (max-width: 1200px) {
+  .h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .container-ap p {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin-bottom: 40px;
+  }
+  #apresentaçao {
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 900px) {
+  .h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .h1 {
+    max-width: 15ch;
+  }
+  #apresentaçao p {
+    max-width: 40ch;
+  }
+  .container-ap p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 36px;
+  }
+  .button {
+    font-size: 0.8125rem;
+    padding: 8px 16px;
+  }
+}
+@media (max-width: 750px) {
+  .container-ap {
+    padding-top: 50px;
+    grid-template-columns: 1fr;
+    gap: 0px;
+    padding-bottom: 50px;
+  }
+  .container-ap p {
+    max-width: 54ch;
+    font-size: 20px;
+  }
+  #apresentaçao {
+    margin-top: 100px;
+  }
+
+  .img-apresentaçao-01 {
+    display: none;
+  }
+  .img-apresentaçao-02 {
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .imgdocarai {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .espaçamento {
+    height: 70px;
+  }
+  .button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+  .fundo-bg {
+    padding-top: 0px;
+  }
+  .h1 {
+    max-width: 15ch;
+    font-size: 40px;
+  }
+  #apresentaçao p {
+    max-width: 40ch;
+  }
+  #apresentaçao {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}

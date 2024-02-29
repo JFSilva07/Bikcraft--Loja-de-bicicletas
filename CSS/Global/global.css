@@ -1,0 +1,12 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  zoom: 80%;
+}
+/*remove a seleção de azul padrão dos links em dispositivos móveis usando media queres*/
+.sobreposiçao {
+  outline: none;
+
+  -webkit-tap-highlight-color: transparent;
+}

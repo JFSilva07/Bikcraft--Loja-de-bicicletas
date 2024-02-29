@@ -1,0 +1,133 @@
+/*tipografia*/
+.font-001 {
+  font: 600 36px/1.125 "poppins", sans-serif;
+}
+
+.font-mensal-sg {
+  font: 600 12px/1.125 "poppins", sans-serif;
+}
+.font-botao-sg {
+  font: 600 18px/1.125 "poppins", sans-serif;
+}
+.seguros h3 {
+  margin: 0px;
+}
+.font-beneficios {
+  font: 500 18px/1.125 "roboto", sans-serif;
+}
+
+/*Estilos*/
+.titulo-seguros {
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  color: var(--c0);
+  display: flex;
+}
+.seguros {
+  background-color: var(--c11);
+}
+.prata {
+  background-color: var(--c12);
+  margin-top: 40px;
+  margin-bottom: 200px;
+  border-radius: 5px;
+  padding: 48px;
+  align-self: center;
+}
+.prata li {
+  color: var(--c0);
+  list-style: none;
+}
+.container-prata {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.prata-topo {
+  display: flex;
+  justify-content: space-between;
+  gap: 200px;
+}
+
+.preço {
+  text-align: end;
+}
+.lista-beneficios {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-top: 32px;
+  margin-bottom: 48px;
+  position: relative;
+}
+.botao-prata {
+  font: 600 18px/1.125 "poppins", sans-serif;
+  padding: 16px 32px;
+  background-color: var(--c10);
+  border-radius: 5px;
+  color: var(--c4);
+}
+.botao-prata:hover {
+  background-color: var(--c9);
+}
+.lista-beneficios li::before {
+  content: url(/img/icones/lista.svg);
+  position: absolute;
+  left: -18px;
+}
+.container-seguros {
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.botao-ouro {
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 16px 32px;
+  line-height: 24px;
+  border-radius: 5px;
+  color: #332200;
+  background: linear-gradient(to bottom, #ffbf00, #f2a50c);
+  display: inline-block;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.botao-ouro:hover {
+  background: linear-gradient(to bottom, #ffb60d, #e59317);
+}
+
+@media (max-width: 900px) {
+  .container-seguros {
+    padding: 20px;
+  }
+  .prata-topo {
+    gap: 80px;
+  }
+  .titulo-seguros {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .container-seguros {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+  .prata {
+    margin-bottom: 32px;
+  }
+  .titulo-seguros h1 {
+    font-size: 40px;
+  }
+  .font-001 {
+    font-size: 36px;
+  }
+}

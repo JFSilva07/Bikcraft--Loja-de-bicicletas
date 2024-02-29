@@ -1,0 +1,128 @@
+.container-tecnologia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+  row-gap: 48px;
+  gap: 40px;
+}
+.tecnologia h2 {
+  line-height: 1.01;
+}
+.tecnologia-bg {
+  background: var(--c11);
+  margin-top: 160px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 40px;
+}
+.caracteristicas h3,
+p {
+  color: var(--c0);
+}
+.caracteristicas p {
+  max-width: 30ch;
+}
+.tecnologia-titulo {
+  color: var(--c0);
+  margin-top: 24px;
+}
+.font-tecnologia-titulo {
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 1.125;
+  font-family: "poppins", sans-serif;
+}
+.button-tecnologia {
+  color: var(--p1);
+  border-bottom: solid 4px var(--p1);
+  padding: 8px;
+}
+.button-tecnologia:hover {
+  border-radius: 5px;
+  background-color: var(--p1);
+  color: var(--p5);
+  transition: 0.3s;
+}
+.font-descriçao {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  font-family: "roboto", sans-serif;
+  flex-wrap: wrap;
+}
+.caracteristicas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+  margin-top: 36px;
+}
+
+.img-tecnologia {
+  grid-column: 2;
+  grid-row: 1/3;
+}
+.img-tecnologia img {
+  max-width: 105%;
+  margin-top: -120px;
+  margin-bottom: -120px;
+  margin-right: -36px;
+  object-fit: cover;
+  padding-left: 20px;
+}
+.descriçao {
+  max-width: 40ch;
+  margin-bottom: 32px;
+}
+@media (max-width: 900px) {
+  .font-descriçao {
+    font-size: 1rem;
+  }
+  .font-tecnologia-titulo {
+    font-size: 36px;
+    max-width: 16ch;
+  }
+  .font-2-m {
+    font-size: 16px;
+  }
+  .font-1-l {
+    font-size: 16px;
+  }
+  .font-tecnologia-01 {
+    font-size: 12px;
+  }
+  .container-tecnologia {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .img-tecnologia {
+    display: none;
+  }
+  .container-tecnologia {
+    grid-template-columns: 1fr;
+    padding-right: 20px;
+  }
+  .tecnologia h2 {
+    margin-bottom: 40px;
+  }
+  .font-descriçao {
+    font-size: 20px;
+  }
+  .font-tecnologia-01 {
+    margin-top: 32px;
+    font-size: 14px;
+  }
+  .caracteristicas {
+    gap: 15px;
+  }
+
+  .tecnologia-bg {
+    padding-right: 0px;
+  }
+}

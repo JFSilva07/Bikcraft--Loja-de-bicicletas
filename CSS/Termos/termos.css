@@ -1,0 +1,44 @@
+.titulo-termos {
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 20px;
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+}
+.termos {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+  box-sizing: border-box;
+  padding: 20px;
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+}
+.titulo-termos h1 {
+  margin-top: 18px;
+}
+
+.termos li {
+  list-style: none;
+  margin-bottom: 28px;
+  max-width: 80ch;
+}
+.termos h2 {
+  margin-bottom: 48px;
+}
+.margin-footer {
+  margin-top: 20px;
+  max-width: max-content;
+  padding-bottom: 20px;
+}
+@media (max-width: 900px) {
+  .titulo-termos h1 {
+    font-size: 48px;
+  }
+}
