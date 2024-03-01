@@ -50,6 +50,12 @@
 .font-tecnologia-01 {
   font: 400 16px/1.3 "roboto", sans-serif;
 }
+.size-24{
+  font-size: 24px;
+}
+.size-18{
+  font-size: 18px;
+}
 @media (max-widht: 900px) {
   .font-1-xxl {
     font: 600 2rem/1.125 "poppins", sans-serif;
