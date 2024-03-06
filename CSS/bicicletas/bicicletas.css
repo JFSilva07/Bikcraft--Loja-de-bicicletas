@@ -47,7 +47,7 @@
   width: 12px;
   height: 8px;
   background: linear-gradient(to bottom, #ffbf00, #f2a50c);
-  top: 8px;
+  top: -12px;
 }
 .container-descrição p {
   font-size: 18px;

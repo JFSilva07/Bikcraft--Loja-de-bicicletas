@@ -1,0 +1,227 @@
+/*CONTAINER*/
+
+.container-orcamento{
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    max-width: 1350px;
+    margin: 0px auto;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-self: center;
+    padding: 0px 20px;
+}
+.secao-orcamento{
+    background-color: var(--c1);
+    box-shadow: inset 0px 400px var(--c11);
+    padding-bottom: 120px;
+}
+
+
+/*ORÇAMENTO TITULO*/
+
+.orcamento-titulo-bg{
+    background-color: var(--c11);
+}
+.orcamento-titulo{
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    max-width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    padding: 60px 20px;
+
+}
+.orcamento-titulo h1,p {
+    margin: 0px;
+}
+.orcamento-titulo h1{
+    margin-top: 8px;
+}
+
+/*DADOS PESSOAIS*/
+
+.dados-pessoais{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 20px;
+    padding: 0px 20px;
+    margin-top: 60px;
+    position: relative;
+}
+.dados-pessoais h3{
+    grid-column: 1/3;
+}
+.dados-pessoais label{
+    display: block;
+    margin-bottom: 4px;
+}
+.dados-pessoais input{
+    padding: 12px;
+    border-radius: 5px;
+    border: solid 1px var(--c2);
+    background-color: var(--c1);
+    width: 100%;
+    gap: 20px;
+    box-sizing: border-box;
+}
+.input-cpf{
+    grid-column: 1/3;
+}
+.input-email{
+    grid-column: 1/3;
+}
+.dados-pessoais h3::before{
+    content: " ";
+    width: 4px;
+    height: 8px;
+    background-color: var(--p1);
+    display: block;
+    position: absolute;
+    left: 8px;
+    top: 13px;
+}
+.formulario-orcamento{
+    background-color: var(--c0);
+    border-radius: 0px 5px 5px 0px;
+    padding-left: 60px;
+}
+
+/*DADOS PESSOAIS- ENTREGA*/
+
+.dados-pessoais-entrega{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 20px;
+    padding: 0px 20px;
+    margin-top: 60px;
+    position: relative;
+}
+.dados-pessoais-entrega h3{
+    grid-column: 1/3;
+}
+.dados-pessoais-entrega input{
+    padding: 12px;
+    border-radius: 5px;
+    border: solid 1px var(--c2);
+    background-color: var(--c1);
+    width: 100%;
+    gap: 20px;
+    box-sizing: border-box;
+}
+.dados-pessoais-entrega label{
+    display: block;
+    margin-bottom: 4px;
+}
+.input-estado input{
+    border: solid 1px var(--c4);
+}
+.dados-pessoais-entrega h3::before{
+    content: " ";
+    width: 4px;
+    height: 8px;
+    background-color: var(--p1);
+    display: block;
+    position: absolute;
+    left: 8px;
+    top: 13px;
+}
+
+/*TERMOS E CONDIÇÕES*/
+
+.dados-pessoais-termos-check div{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+.dados-pessoais-termos-check input{
+    transform: scale(2);
+    margin: 0px;
+    margin-left: 8px;
+}
+.sublinhado{
+    text-decoration: underline;
+}
+.dados-pessoais-termos-check{
+    padding: 20px;
+}
+
+
+/*SELECIONAR PRODUTO*/
+
+.selecionar-produto{
+    background-color: var(--c12);
+}
+.selecionar-produto h3{
+    color: var(--c5);
+    margin: 0px;
+    margin-bottom: 20px;
+}
+.selecionar-produto{
+    color: var(--c0);
+}
+
+.selecionar-produto{
+    padding: 60px;
+    border-radius: 5px 0px 0px 5px;
+
+}
+.produto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.produto h3{
+    grid-column: 1/3;
+}
+.produto-bikcraft ,.produto-seguro{
+    background-color: var(--c10);
+    padding: 16px;
+    border-radius: 5px;
+}
+.item-plano{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+.item-plano div{
+    background-color: var(--c10);
+    padding: 16px ;
+    border-radius: 5px;
+}
+.selecionar-produto h3::before{
+    content: " ";
+    width: 4px;
+    height: 8px;
+    background-color: var(--p1);
+    display: block;
+    position: absolute;
+    left: -12px;
+    top: 2
+}
+
+
+/*RESPONSIVO*/
+
+@media (max-width: 700px){
+    .container-orcamento{
+        grid-template-columns: 1fr;
+    }
+    .orcamento-titulo h1{
+        font-size: 42px;
+    }
+    .orcamento-titulo p{
+        font-size: 14px;
+    }
+    .formulario-orcamento{
+        border-radius: 0px 0px 5px 5px;
+    }
+    .selecionar-produto{
+        border-radius: 5px 5px 0px 0px;
+    }
+    
+}
+

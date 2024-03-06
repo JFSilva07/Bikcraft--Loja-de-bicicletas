@@ -17,7 +17,6 @@
 @import "/CSS/Home/seguros.css";
 
 /*Termos e condições*/
-
 @import "/CSS/Termos/termos.css";
 
 /*Bicicletas*/
@@ -26,9 +25,11 @@
 /*bicicletas-interno*/
 @import "/CSS/bicicletas/bicicletas-interno/interno.css";
 
-
 /*Contato*/
 @import "/CSS/contato/contato.css";
 
 /*seguros*/
-@import "/CSS/seguros/seguros.css"
+@import "/CSS/seguros/seguros.css";
+
+/*ORÇAMENTOS*/
+@import "/CSS/orcamentos/orcamentos.css"
