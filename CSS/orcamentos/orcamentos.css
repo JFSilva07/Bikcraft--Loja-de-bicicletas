@@ -218,10 +218,21 @@
     }
     .formulario-orcamento{
         border-radius: 0px 0px 5px 5px;
+        padding-right: 60px;
     }
     .selecionar-produto{
         border-radius: 5px 5px 0px 0px;
     }
-    
+    .dados-pessoais, .dados-pessoais-entrega{
+        padding: 0px;
+    }
+    .dados-pessoais h3::before{
+        left: -12px;
+    }
+    .dados-pessoais-entrega h3::before{
+        left: -12px;
+    }
+    .dados-pessoais-termos-check{
+        padding-top: 40px;
+    }
 }
-
